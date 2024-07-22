@@ -17,9 +17,9 @@ if [ "$ENV" != "DEV" ] && [ "$ENV" != "PROD" ]; then
     exit 1
 fi
 
-if [ "$BRANCH" != "develop" ] && [ "$BRANCH" != "master" ]; then
+if [ "$BRANCH" != "develop" ] && [ "$BRANCH" != "main" ]; then
     echo "BRANCH variable not found or value is invalid."
-    echo "Valid values are: master or develop. Got: $BRANCH"
+    echo "Valid values are: main or develop. Got: $BRANCH"
     exit 1
 fi
 
